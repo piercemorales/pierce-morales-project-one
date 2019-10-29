@@ -99,7 +99,7 @@ a,
   background-image: url(assets/header-image.jpg);
   min-height: 700px;
   height: 90vh;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   text-align: center;
   background-repeat: no-repeat;
@@ -203,7 +203,7 @@ a,
 
 .contentText {
   width: 50%;
-  padding: 5%; 
+  padding: 5%;  
 }
 
 .contentInfo {
@@ -337,6 +337,10 @@ a,
   display: inline-block;
   width: 50%;
 }
+.emailInfo input[placeholder] {
+  font-size: 1.4rem;
+  padding: 10px;
+  }
 
 .contactInfo {
   float: left;
@@ -348,14 +352,16 @@ a,
   padding: 1%;
   width: 60%;
   font-size: 2rem;
+  float: left;
 }
 
 .subscribeBtn {
   background-color: #9200FF;
-  border: 1px solid #9200FF;
-  width: 39%;
-  padding: 1% 5%;
+  border: none;
+  width: 40%;
+  padding: 7px 10px;
   font-size: 2rem;
+  float: left;
   
 }
 
@@ -388,6 +394,7 @@ a,
   .footerInfo p {
     font-size: 1.6rem;
   }
+
   h2,h3 {
     font-size: 4.4rem;
   }
@@ -440,7 +447,6 @@ a,
   .ticketText {
     text-align: center;
   }
-
 
   .wrapper {
     max-width: 90%;
@@ -510,7 +516,85 @@ a,
     padding-bottom: 20px;
   }
   
+  .inquiryNav i {
+    font-size: 6rem;
+  }
 
+  .iBreak {
+    font-weight: 700;
 
+  }
 
+  .inquiryNav ul li {
+    width: 100%; 
+    padding: 10% 0;
+  }
+
+  .instaPic h2 {
+    text-align: center; 
+  }
+
+  .instaPic li:nth-of-type(3){
+    display: none;
+  }
+
+  .instaPic ul li:nth-of-type(2) {
+    margin-right: 0;
+    }
+    
+  .instaPic li {
+    width: calc((100% / 2) - 1%);
+
+  }
+
+.footerInfo {
+  text-align: center;
+}
+
+  .contactInfo {
+    float: none;
+    display: inline;
+  }
+
+  .contactInfo p {
+    line-height: 2.5rem;
+  }
+
+  .emailInfo {   
+     display: inline;
+  }
+
+  .emailInfo h3 {
+    padding-top: 5%;
+  }
+
+  .emailInfo p {
+    padding: 5px 0 20px 0;
+  }
+
+  .emailInput,
+  .subscribeBtn {
+    float: none;
+    display: inline;
+    width: 100%;
+  }
+
+  .emailInput {
+    margin-bottom: 10px;
+
+  }
+
+  .subscribeBtn,
+  .emailInput{
+    padding: 10px 15px;
+  }
+
+  .emailInfo input[placeholder] {
+    text-align: center;
+  }
+
+  .footerInfo {
+    padding: 5% 0;
+  }
+}
 
