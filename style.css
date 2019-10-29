@@ -395,7 +395,7 @@ a,
 
 @media (max-width: 1070px) {
   .headerCaption {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
   }
 
   .headerSubtitle {
@@ -431,11 +431,17 @@ a,
   h2,h3 {
     font-size: 4rem;
   }
+  .contentTitle,
+  .contentInfo {
+    text-align: left;
+  }
 
   .contentText,
   .ticketText {
     text-align: center;
   }
+
+
   .wrapper {
     max-width: 90%;
   }
@@ -472,6 +478,7 @@ a,
   .ticketContent img,
   .ticketText {
     width: 100%;
+    margin: 0;
   }
 
   .ticketContent img {
@@ -479,7 +486,6 @@ a,
     object-fit: fill;
     object-position: bottom;
   }
-
 
   .ticketText h2,
   .ticketBtn {
@@ -490,10 +496,20 @@ a,
     font-size: 2.3rem;
   }
 
+
+  .ticketText {
+    padding: 5% 0;
+
+  } 
+
   .ticketText p {
     padding: 0 0 30px 0;
   }
 
+  .ticketText h2 {
+    padding-bottom: 20px;
+  }
+  
 
 
 
