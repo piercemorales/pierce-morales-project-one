@@ -1,0 +1,500 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+
+/* GENERAL STYLING */
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0F0632;
+
+}
+
+ul, li,
+h1, h2, 
+h3, h4, 
+h5, h6,
+figure,
+p {
+  padding: 0;
+  margin: 0;
+} 
+
+li {
+  list-style: none;
+}
+
+p {
+  color: #fff;
+}
+
+h2,h3 {
+  font-size: 5.2rem;
+}
+
+
+.readmoreBtn,
+h1,
+h2,
+h3,
+button {
+  font-family: 'Iceberg', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+a,
+h4,
+.iBreak {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+a,
+.iBreak {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;  
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.readmoreBtn {
+  background-color: #9200FF;
+  border: none;
+  padding: 10px 15px;
+  font-size: 2rem;
+  transition: ease-in-out 0.1s;
+}
+
+.readmoreBtn:hover {
+  background-color: #3D0369;
+  border: 1px white solid;
+  /* color: #808080; */
+  border-radius: 5px;
+}
+
+.navbar {
+  text-align: center;
+}
+
+/* HEADER STYLING */
+
+.site-header {
+  background-image: url(assets/header-image.jpg);
+  min-height: 700px;
+  height: 90vh;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+  overflow:hidden;
+}
+
+.navList li,
+.navbar li {
+  display: inline; 
+  padding: 20px;
+}
+
+.navbar a,
+.socialList a{
+  transition: ease-in-out 0.2s;
+} 
+.navbar a:hover,
+.socialList a:hover {
+  color: rgba(255,255,255,0.2);
+}
+
+
+
+
+.headerContent {
+  overflow: hidden;
+}
+
+.headerContent nav {
+  padding: 40px 0 100px;
+}
+
+.headerCaption {
+  position: relative;
+  overflow: hidden;
+  font-size: 8rem;
+}
+
+.headerSubtitle {
+  width: 450px;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  background-color: #9200FF;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.socialList  {
+  position: absolute;
+  right:0;
+  top: 175px;
+}
+
+.socialList a {
+  font-size: 2.5rem;
+}
+
+.socialList li {
+  padding: 10px;
+  margin-right: 50px;
+}
+/* HEADER CONTENT ENDS*/
+/* FEATURED CONTENT BEGINS */
+
+/* ALIGNED TEXT WITH IMAGES i miss flexbox :( */
+
+
+.box {
+  overflow: hidden;
+  width: 100%;
+}
+
+.box,
+.box1,
+.lower {
+  float: left;
+}
+
+.box2,
+.upper {
+  float: right;
+}
+
+.upper {
+  float: right;
+}
+
+.lower,
+.upper {
+  width: 50%;
+  display: block;
+} 
+
+.upperImages {
+  width: 100%;
+  display: block;
+  float: right;
+}
+
+/* CONTENT TEXT STUFF */
+
+.contentText {
+  width: 50%;
+  padding: 5%; 
+}
+
+.contentInfo {
+  font-size: 2rem;
+  line-height: 29px;
+  padding: 10px 0 20px;
+}
+
+
+
+/* FEATURED CONTENT ENDS */
+/* TICKETS SECTION BEGINS */
+
+
+
+
+.ticketSection {
+  background: #08080B;
+  clear: both;
+  overflow: hidden;
+  position: relative;
+}
+
+.ticketContent{
+  padding: 100px 0;
+  position: relative;
+
+}
+
+.ticketText, .ticketImage {
+  float: left;
+}
+
+.ticketText {
+  width: 60%;
+  top: 88px;
+}
+
+.ticketText p {
+  padding: 60px 0 50px;
+}
+
+.ticketText h2 {
+  position: absolute;
+  top:88px;
+}
+
+.ticketImage {
+  width: calc(40% - 40px);
+  margin-right: 40px
+}
+
+.ticketBtn {
+  position: absolute;
+  bottom:100px;
+}
+
+/* TICKET SECTION ENDS */
+/* ICON SECTION BEGINS */
+
+.inquirySection {
+  background-color: #3D0369;
+  width: 100%;
+}
+
+.inquiryNav li {
+  display: block;
+  float: left;
+  text-align: center;
+  padding: 15% 0;
+  width: calc(33%);
+}
+.inquiryNav i {
+  font-size: 2.9rem;
+  margin-bottom: 10px;
+
+}
+.iBreak {
+  display: block;
+  clear: both;
+}
+/* ICON SECTION ENDS */
+/* INSTAPICTURE SECTION BEINGS */
+.instagram {
+  text-align: center;
+  margin-bottom: 5%;
+
+}
+
+.instaPic li {
+  float: left;
+  display: inline;
+  width: calc(100% / 3 - (4% / 3));
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+.instaPic li:nth-child(3n){
+  margin-right: 0;
+}
+
+.instaPic img {
+  width: 100%;
+}
+
+.instaPic h2 {
+  margin: 10% 0;
+}
+
+/* INSTAGRAM SECTION ENDS */
+/* FOOTER SECTION BEGINS */
+
+.footerSection {
+  clear:both;
+  background-color: #3D0369;
+}
+
+.footerInfo {
+  padding: 5%;
+}
+
+.footerInfo nav {
+  padding-bottom: 5%;
+}
+
+.footerInfo p {
+  font-size: 2rem;
+}
+
+.emailInfo {
+  display: inline-block;
+  width: 50%;
+}
+
+.contactInfo {
+  float: left;
+  width: 50%;
+}
+
+.emailInput {
+  border: none;
+  padding: 1%;
+  width: 60%;
+  font-size: 2rem;
+}
+
+.subscribeBtn {
+  background-color: #9200FF;
+  border: 1px solid #9200FF;
+  width: 39%;
+  padding: 1% 5%;
+  font-size: 2rem;
+  
+}
+
+.copyright {
+  background-color: #0F0632;
+  font-size: 1.5rem;
+  padding: 5px;
+  text-align: center;
+}
+
+
+/* MEDIA QUERIES WOOOOOOO I LOVE IT */
+
+@media (max-width:1250px) {
+  /* HEADER */
+
+  .socialList {
+    top: 150px;
+  }
+  .headerCaption {
+    font-size: 6rem;
+  }
+
+  .headerSubtitle {
+    font-size: 2.5rem;
+    width: 350px;
+  }
+
+  .contentInfo,
+  .footerInfo p {
+    font-size: 1.6rem;
+  }
+  h2,h3 {
+    font-size: 4.4rem;
+  }
+}
+
+@media (max-width: 1070px) {
+  .headerCaption {
+    font-size: 4.5rem;
+  }
+
+  .headerSubtitle {
+    font-size: 1.8rem;
+    width: 250px;
+  }
+
+  .socialList a {
+    font-size: 1.5rem;
+  }
+
+  .ticketText p {
+    padding: 30px 0 20px 0;
+  }
+
+  .contentInfo,
+  .footerInfo p {
+    font-size: 1.2rem;
+  }
+
+  .readmoreBtn,
+  .navList a  {
+    font-size: 1.5rem;
+  }
+
+  h2,h3 {
+    font-size: 3rem;
+  }
+}
+
+
+@media (max-width:940px) {
+  h2,h3 {
+    font-size: 4rem;
+  }
+
+  .contentText,
+  .ticketText {
+    text-align: center;
+  }
+  .wrapper {
+    max-width: 90%;
+  }
+
+  .contentInfo,
+  .footerInfo p {
+    font-size: 1.6rem;
+  }
+
+
+  .imgBox,
+  .contentText {
+    width: 100%;
+  }  
+
+  .imgBox img,
+  .ticketContent img {
+    height: 60vw;
+    object-fit: cover;
+  }
+
+  .contentTitle {
+    padding-bottom: 0;
+  }
+
+  .boxp, h2 {
+    padding-bottom: 25px;
+  }
+
+  .ticketContent {
+    padding: 5% 0;
+  }
+
+  .ticketContent img,
+  .ticketText {
+    width: 100%;
+  }
+
+  .ticketContent img {
+    height: 70vw;
+    object-fit: fill;
+    object-position: bottom;
+  }
+
+
+  .ticketText h2,
+  .ticketBtn {
+    position: static;
+  }
+
+  .readmoreBtn {
+    font-size: 2.3rem;
+  }
+
+  .ticketText p {
+    padding: 0 0 30px 0;
+  }
+
+
+
+
+
