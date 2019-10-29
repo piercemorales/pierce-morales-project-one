@@ -337,9 +337,13 @@ a,
   display: inline-block;
   width: 50%;
 }
+
+.emailInfo p {
+  padding-bottom: 10px;
+}
 .emailInfo input[placeholder] {
   font-size: 1.4rem;
-  padding: 10px;
+  padding: 6px;
   }
 
 .contactInfo {
@@ -359,7 +363,7 @@ a,
   background-color: #9200FF;
   border: none;
   width: 40%;
-  padding: 7px 10px;
+  padding: 2px 10px;
   font-size: 2rem;
   float: left;
   
@@ -410,9 +414,7 @@ a,
     width: 250px;
   }
 
-  .socialList a {
-    font-size: 1.5rem;
-  }
+  
 
   .ticketText p {
     padding: 30px 0 20px 0;
@@ -423,10 +425,7 @@ a,
     font-size: 1.2rem;
   }
 
-  .readmoreBtn,
-  .navList a  {
-    font-size: 1.5rem;
-  }
+
 
   h2,h3 {
     font-size: 3rem;
@@ -436,8 +435,18 @@ a,
 
 @media (max-width:940px) {
   h2,h3 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
+
+  .socialList a {
+    font-size: 1.5rem;
+  }
+
+    .readmoreBtn,
+  .navList a  {
+    font-size: 2rem;
+  }
+  
   .contentTitle,
   .contentInfo {
     text-align: left;
@@ -462,6 +471,11 @@ a,
   .contentText {
     width: 100%;
   }  
+
+  .contentText,
+  .ticketText {
+    padding-bottom: 10%;
+  }
 
   .imgBox img,
   .ticketContent img {
@@ -505,7 +519,6 @@ a,
 
   .ticketText {
     padding: 5% 0;
-
   } 
 
   .ticketText p {
@@ -522,7 +535,6 @@ a,
 
   .iBreak {
     font-weight: 700;
-
   }
 
   .inquiryNav ul li {
@@ -586,15 +598,35 @@ a,
 
   .subscribeBtn,
   .emailInput{
-    padding: 10px 15px;
+    padding: 7px 15px;
   }
 
   .emailInfo input[placeholder] {
     text-align: center;
+    padding: 10px;
   }
 
   .footerInfo {
     padding: 5% 0;
   }
+
+  .footernav {
+    font-size: 1.2rem;
+  }
+
+  .navbar li {
+    padding: 20px 10px;
+  }
+
+  .headernav,
+  .socialList {
+    display: none;
+  }
 }
 
+@media (max-width:400px) {
+  .site-header {
+    min-height: 600px;
+    height: 60vh;
+  }
+}
