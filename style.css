@@ -15,7 +15,6 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #0F0632;
-
 }
 
 ul, li,
@@ -39,7 +38,6 @@ p {
 h2,h3 {
   font-size: 5.2rem;
 }
-
 
 .readmoreBtn,
 h1,
@@ -95,7 +93,7 @@ a,
   background-image: url(assets/header-image.jpg);
   min-height: 700px;
   height: 90vh;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
   text-align: center;
   background-repeat: no-repeat;
@@ -165,9 +163,7 @@ color: white;
 }
 /* HEADER CONTENT ENDS*/
 /* FEATURED CONTENT BEGINS */
-
 /* ALIGNED TEXT WITH IMAGES i miss flexbox :( */
-
 
 .box {
   overflow: hidden;
@@ -210,17 +206,12 @@ color: white;
 
 .contentInfo {
   font-size: 2rem;
-  line-height: 29px;
+  line-height: 2.9rem;
   padding: 10px 0 20px;
 }
 
-
-
 /* FEATURED CONTENT ENDS */
 /* TICKETS SECTION BEGINS */
-
-
-
 
 .ticketSection {
   background: #08080B;
@@ -232,7 +223,6 @@ color: white;
 .ticketContent{
   padding: 100px 0;
   position: relative;
-
 }
 
 .ticketText, .ticketImage {
@@ -278,21 +268,24 @@ color: white;
   padding: 15% 0;
   width: calc(33%);
 }
+
 .inquiryNav i {
   font-size: 2.9rem;
   margin-bottom: 10px;
 
 }
+
 .iBreak {
   display: block;
   clear: both;
 }
+
 /* ICON SECTION ENDS */
 /* INSTAPICTURE SECTION BEINGS */
+
 .instagram {
   text-align: center;
   margin-bottom: 5%;
-
 }
 
 .instaPic li {
@@ -368,7 +361,6 @@ color: white;
   padding: 2px 10px;
   font-size: 2rem;
   float: left;
-  
 }
 
 .copyright {
@@ -378,12 +370,9 @@ color: white;
   text-align: center;
 }
 
-
 /* MEDIA QUERIES WOOOOOOO I LOVE IT */
 
 @media (max-width:1250px) {
-  /* HEADER */
-
   .socialList {
     top: 150px;
   }
@@ -406,6 +395,7 @@ color: white;
   }
 }
 
+
 @media (max-width: 1070px) {
   .headerCaption {
     font-size: 5.5rem;
@@ -416,8 +406,6 @@ color: white;
     width: 250px;
   }
 
-  
-
   .ticketText p {
     padding: 30px 0 20px 0;
   }
@@ -426,8 +414,6 @@ color: white;
   .footerInfo p {
     font-size: 1.2rem;
   }
-
-
 
   h2,h3 {
     font-size: 3rem;
@@ -472,7 +458,6 @@ color: white;
   .footerInfo p {
     font-size: 1.6rem;
   }
-
 
   .imgBox,
   .contentText {
@@ -632,5 +617,18 @@ color: white;
   .site-header {
     min-height: 500px;
     height: 80vh;
+  }
+}
+
+@media (min-width: 1921px){
+  html {
+    font-size: 125%;
+  }
+  
+  .headerSubtitle {
+    width: 900px;
+  }
+  .ticketText p {
+    padding-top: 125px;
   }
 }
