@@ -8,8 +8,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 
 /* GENERAL STYLING */
-
-
 html {
   font-size: 62.5%;
 }
@@ -83,10 +81,8 @@ a,
 }
 
 .readmoreBtn:hover {
-  background-color: #3D0369;
-  border: 1px white solid;
-  /* color: #808080; */
-  border-radius: 5px;
+  background-color: #fff;
+  color: #9200FF;
 }
 
 .navbar {
@@ -121,8 +117,14 @@ a,
   color: rgba(255,255,255,0.2);
 }
 
-
-
+.fas.fa-bars {
+display: none;
+position: absolute;
+right: 50px;
+top: 50px;
+font-size: 4rem;
+color: white;
+}
 
 .headerContent {
   overflow: hidden;
@@ -442,11 +444,16 @@ a,
     font-size: 1.5rem;
   }
 
+  .fas.fa-bars {
+    display: block;
+    transition: all 0.3s;
+  }
+
     .readmoreBtn,
   .navList a  {
     font-size: 2rem;
   }
-  
+
   .contentTitle,
   .contentInfo {
     text-align: left;
@@ -556,12 +563,11 @@ a,
     
   .instaPic li {
     width: calc((100% / 2) - 1%);
-
   }
 
-.footerInfo {
+  .footerInfo {
   text-align: center;
-}
+  }
 
   .contactInfo {
     float: none;
@@ -588,12 +594,10 @@ a,
   .subscribeBtn {
     float: none;
     display: inline;
-    width: 100%;
   }
 
   .emailInput {
     margin-bottom: 10px;
-
   }
 
   .subscribeBtn,
@@ -626,7 +630,7 @@ a,
 
 @media (max-width:400px) {
   .site-header {
-    min-height: 600px;
-    height: 60vh;
+    min-height: 500px;
+    height: 80vh;
   }
 }
