@@ -587,6 +587,7 @@ color: white;
   .subscribeBtn,
   .emailInput{
     padding: 7px 15px;
+    width: 100%;
   }
 
   .emailInfo input[placeholder] {
