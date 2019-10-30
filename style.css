@@ -93,7 +93,6 @@ a,
   background-image: url(assets/header-image.jpg);
   min-height: 700px;
   height: 90vh;
-  background-attachment: fixed;
   background-size: cover;
   text-align: center;
   background-repeat: no-repeat;
@@ -620,7 +619,7 @@ color: white;
   }
 }
 
-@media (min-width: 1921px){
+@media (min-width: 2000px){
   html {
     font-size: 125%;
   }
